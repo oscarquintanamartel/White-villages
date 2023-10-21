@@ -1,0 +1,58 @@
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, span::-moz-selection, a::-moz-selection, img::-moz-selection {
+  background: rgb(173, 216, 230);
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, a::selection, img::selection {
+  background: rgb(173, 216, 230);
+}
+
+.card {
+  border: 2px solid lightblue;
+}
+.card hr {
+  border: 2px solid #85C124;
+  opacity: 0.7;
+}
+.card .pos a {
+  width: 20%;
+}
+.card .boton1 {
+  background-color: rgba(133, 193, 36, 0.568627451);
+}
+.card .boton1:hover {
+  background-color: #85C124;
+}
+.card .boton2 {
+  background-color: rgba(97, 197, 192, 0.6392156863);
+}
+.card .boton2:hover {
+  background-color: rgba(97, 197, 192, 0.9098039216);
+}
+.card .boton3 {
+  background-color: rgba(239, 21, 21, 0.673);
+}
+.card .boton3:hover {
+  background-color: rgba(239, 21, 21, 0.852);
+}
+.card .pos2 a {
+  width: 30%;
+}
+
+.img1 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hov:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+hr {
+  width: 80%;
+  border: 2px solid #85C124;
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, a::selection, img::selection {
+  background: rgb(173, 216, 230);
+}
+
+.card{
+
+  border: 2px solid lightblue;
+
+  hr {
+    border: 2px solid #85C124;
+    opacity: 0.7;
+  }
+
+  .pos a{
+    width: 20%;
+  }
+  .boton1 {
+    background-color: #85c12491;
+  }
+  .boton1:hover {
+    background-color: #85C124;
+  }
+  .boton2 {
+    background-color: #61c5c0a3;
+  }
+  .boton2:hover {
+    background-color: #61c5c0e8;
+  }
+  .boton3 {
+    background-color: rgba(239, 21, 21, 0.673);
+  }
+  .boton3:hover {
+    background-color: rgba(239, 21, 21, 0.852);
+  }
+  .pos2 a {
+    width: 30%;
+  }
+}
+
+.img1 {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hov:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+hr {
+  width: 80%;
+  border: 2px solid #85C124;
+  opacity: 0.7;
+}
+

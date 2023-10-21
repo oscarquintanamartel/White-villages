@@ -1,0 +1,9 @@
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, a::selection, img::selection {
+  background: rgb(173, 216, 230);
+}
+
+.backg {
+  background-image: url("/images/form-bg.png");
+  background-position: center;
+  background-size: cover;
+}

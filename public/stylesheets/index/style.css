@@ -1,0 +1,55 @@
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, span::-moz-selection, a::-moz-selection, img::-moz-selection {
+  background: rgb(173, 216, 230);
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, a::selection, img::selection {
+  background: rgb(173, 216, 230);
+}
+
+.section1 .portadaimage img {
+  width: 90%;
+  border-radius: 10px;
+}
+.section1 .portadaimage img:hover {
+  box-shadow: 1px 1px 3px 1px #85C124, -1px -1px 3px 1px #85C124;
+}
+
+hr {
+  width: 80%;
+  border: 2px solid #85C124;
+  opacity: 0.7;
+}
+
+.card {
+  border: 2px solid rgb(173, 216, 230);
+}
+.card .boton {
+  background-color: rgba(133, 193, 36, 0.568627451);
+}
+.card .boton:hover {
+  background-color: #85C124;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.sectionC {
+  background-image: url("/images/form-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedor {
+  padding: 3vh 0;
+}
+.contenedor .carousel {
+  height: 400px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedor .carousel img {
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

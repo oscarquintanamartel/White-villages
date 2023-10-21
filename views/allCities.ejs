@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>White Towns of Andalusia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/allCities/style.css">
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+    <main class="container-fluid">
+
+    <section class="row section1 pb-5 justify-content-evenly text-center">
+
+      <h3 class="py-5">Check out all this amazing Villages!</h3>
+
+      <% result.forEach(city => { %>
+      <div class="col-12 col-md-5 gy-5">
+        <div class="marco d-flex justify-content-center">
+          <div class="card mb-3">
+            <img src="/images/city/<%= city.img %>" class="card-img-top" alt="imagenCiudad">
+            <div class="card-body">
+              <h4 class="card-title"><%= city.city_name %></h4>
+              <h5 class="card-text fst-italic"><%= city.city_tag %></h5>
+              <hr>
+              <h5 class="card-text">Province: <%= city.province %></h5>
+              <p class="card-text"><%= city.description %></p>
+              <hr>
+              <h5 class="card-text">Contact:</h5>
+              <p>Phone Number: <%= city.tel %></p>
+              <p>Email Us: <%= city.email %></p>
+            </div>
+            <div class="pos pb-3"><a href="/city/oneCity/<%= city.city_id %>" class="btn boton">See more</a></div>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+
+    </section>
+
+    </main>
+
+    <%- include('footer') %>
